@@ -20,7 +20,7 @@ $data = array(
     'age'  => 20,
     'sex'  => 'f',
 );
-$lifetime = 3600; // cache lifetime (default: 3600)
+$lifetime = 3600; // cache lifetime (default: 3600 seconds = 1 hour)
 $cache->save($id, $data, $lifetime);
 
 $user = $cache->get($id);
